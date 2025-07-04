@@ -230,7 +230,12 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Game Reset");
     }
 
-    submitAnswerButton.addEventListener('click', submitAnswer);
+    if (submitAnswerButton) {
+        submitAnswerButton.addEventListener('click', submitAnswer);
+    } else {
+        console.error("Submit Answer Button not found!");
+    }
+
     // answerInput is removed, so this event listener is no longer needed.
     // answerInput.addEventListener('keypress', function(event) {
     //     if (event.key === 'Enter') {
@@ -238,8 +243,18 @@ document.addEventListener('DOMContentLoaded', () => {
     //         submitAnswer();
     //     }
     // });
-    closeModalButton.addEventListener('click', closeModal);
-    resetGameButton.addEventListener('click', resetGame);
+
+    if (closeModalButton) {
+        closeModalButton.addEventListener('click', closeModal);
+    } else {
+        console.error("Close Modal Button not found!");
+    }
+
+    if (resetGameButton) {
+        resetGameButton.addEventListener('click', resetGame);
+    } else {
+        console.error("Reset Game Button not found!");
+    }
 
     window.onclick = function(event) {
         if (event.target == questionModal) {
