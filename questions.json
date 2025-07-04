@@ -1,0 +1,214 @@
+{
+  "categories": [
+    {
+      "name": "WORLD CAPITALS",
+      "questions": [
+        {
+          "question": "The capital of France.",
+          "answer": "Paris",
+          "points": 200,
+          "answered": false
+        },
+        {
+          "question": "The capital of Japan.",
+          "answer": "Tokyo",
+          "points": 400,
+          "answered": false
+        },
+        {
+          "question": "The capital of Australia.",
+          "answer": "Canberra",
+          "points": 600,
+          "answered": false
+        },
+        {
+          "question": "The capital of Egypt.",
+          "answer": "Cairo",
+          "points": 800,
+          "answered": false
+        },
+        {
+          "question": "The capital of Brazil.",
+          "answer": "Brasilia",
+          "points": 1000,
+          "answered": false
+        }
+      ]
+    },
+    {
+      "name": "FAMOUS SCIENTISTS",
+      "questions": [
+        {
+          "question": "Developed the theory of relativity.",
+          "answer": "Albert Einstein",
+          "points": 200,
+          "answered": false
+        },
+        {
+          "question": "Known for her work on radioactivity.",
+          "answer": "Marie Curie",
+          "points": 400,
+          "answered": false
+        },
+        {
+          "question": "Formulated the laws of motion and universal gravitation.",
+          "answer": "Isaac Newton",
+          "points": 600,
+          "answered": false
+        },
+        {
+          "question": "Proposed the theory of evolution by natural selection.",
+          "answer": "Charles Darwin",
+          "points": 800,
+          "answered": false
+        },
+        {
+          "question": "Made significant discoveries in electromagnetism and electrochemistry.",
+          "answer": "Michael Faraday",
+          "points": 1000,
+          "answered": false
+        }
+      ]
+    },
+    {
+      "name": "LITERATURE",
+      "questions": [
+        {
+          "question": "Author of 'Pride and Prejudice'.",
+          "answer": "Jane Austen",
+          "points": 200,
+          "answered": false
+        },
+        {
+          "question": "Wrote '1984' and 'Animal Farm'.",
+          "answer": "George Orwell",
+          "points": 400,
+          "answered": false
+        },
+        {
+          "question": "The author of 'To Kill a Mockingbird'.",
+          "answer": "Harper Lee",
+          "points": 600,
+          "answered": false
+        },
+        {
+          "question": "Created the character Sherlock Holmes.",
+          "answer": "Arthur Conan Doyle",
+          "points": 800,
+          "answered": false
+        },
+        {
+          "question": "Author of 'The Great Gatsby'.",
+          "answer": "F. Scott Fitzgerald",
+          "points": 1000,
+          "answered": false
+        }
+      ]
+    },
+    {
+      "name": "US PRESIDENTS",
+      "questions": [
+        {
+          "question": "The first President of the United States.",
+          "answer": "George Washington",
+          "points": 200,
+          "answered": false
+        },
+        {
+          "question": "President during the Civil War.",
+          "answer": "Abraham Lincoln",
+          "points": 400,
+          "answered": false
+        },
+        {
+          "question": "Known for the New Deal programs.",
+          "answer": "Franklin D. Roosevelt",
+          "points": 600,
+          "answered": false
+        },
+        {
+          "question": "The youngest person to assume the presidency.",
+          "answer": "Theodore Roosevelt",
+          "points": 800,
+          "answered": false
+        },
+        {
+          "question": "The only president to serve non-consecutive terms.",
+          "answer": "Grover Cleveland",
+          "points": 1000,
+          "answered": false
+        }
+      ]
+    },
+    {
+      "name": "TECHNOLOGY",
+      "questions": [
+        {
+          "question": "Co-founder of Apple Inc.",
+          "answer": "Steve Jobs",
+          "points": 200,
+          "answered": false
+        },
+        {
+          "question": "The most popular search engine in the world.",
+          "answer": "Google",
+          "points": 400,
+          "answered": false
+        },
+        {
+          "question": "A popular social media platform with a blue bird logo.",
+          "answer": "Twitter",
+          "points": 600,
+          "answered": false
+        },
+        {
+          "question": "The world's largest online retailer.",
+          "answer": "Amazon",
+          "points": 800,
+          "answered": false
+        },
+        {
+          "question": "The creator of the World Wide Web.",
+          "answer": "Tim Berners-Lee",
+          "points": 1000,
+          "answered": false
+        }
+      ]
+    },
+    {
+      "name": "SPORTS TRIVIA",
+      "questions": [
+        {
+          "question": "This sport is played at Wimbledon.",
+          "answer": "Tennis",
+          "points": 200,
+          "answered": false
+        },
+        {
+          "question": "The number of players on a standard soccer team.",
+          "answer": "11",
+          "points": 400,
+          "answered": false
+        },
+        {
+          "question": "The country that won the first FIFA World Cup in 1930.",
+          "answer": "Uruguay",
+          "points": 600,
+          "answered": false
+        },
+        {
+          "question": "The sport known as America's pastime.",
+          "answer": "Baseball",
+          "points": 800,
+          "answered": false
+        },
+        {
+          "question": "The city that hosted the 2016 Summer Olympics.",
+          "answer": "Rio de Janeiro",
+          "points": 1000,
+          "answered": false
+        }
+      ]
+    }
+  ]
+}

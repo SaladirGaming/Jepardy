@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jeopardy!</h1>
+    </header>
+
+    <main>
+        <div id="score-board">
+            <h2>Score</h2>
+            <div id="player-score">Player 1: $0</div>
+            <!-- Add more players if needed -->
+        </div>
+
+        <div id="game-board">
+            <!-- Categories and questions will be dynamically generated here by JavaScript -->
+        </div>
+
+        <div id="question-modal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3 id="modal-category">Category</h3>
+                <p id="modal-points">Points: $</p>
+                <p id="modal-question-text">Question text will appear here.</p>
+                <input type="text" id="answer-input" placeholder="Your answer">
+                <button id="submit-answer-button">Submit Answer</button>
+                <p id="feedback"></p>
+                <p id="correct-answer-display" style="display:none;">Correct Answer: <span id="correct-answer-text"></span></p>
+            </div>
+        </div>
+
+        <button id="reset-game-button">New Game</button>
+    </main>
+
+    <footer>
+        <p>Jeopardy Game - Built by Jules</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
