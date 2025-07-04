@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalCategory = document.getElementById('modal-category');
     const modalPoints = document.getElementById('modal-points');
     const modalQuestionText = document.getElementById('modal-question-text');
-    const answerInput = document.getElementById('answer-input');
+    // const answerInput = document.getElementById('answer-input'); // Removed
+    const choiceContainer = document.getElementById('choice-container'); // Added
     const submitAnswerButton = document.getElementById('submit-answer-button');
     const feedbackDisplay = document.getElementById('feedback');
     const correctAnswerDisplay = document.getElementById('correct-answer-display');
@@ -92,30 +93,63 @@ document.addEventListener('DOMContentLoaded', () => {
         const category = categories[categoryIndex];
         currentQuestionData = category.questions.find(q => q.points === points);
 
-        if (currentQuestionData) {
+        // Check if the question is in the new multiple-choice format
+        if (currentQuestionData && currentQuestionData.options && typeof currentQuestionData.answer === 'number') {
             modalCategory.textContent = category.name;
             modalPoints.textContent = `Points: $${currentQuestionData.points}`;
             modalQuestionText.textContent = currentQuestionData.question;
 
-            answerInput.value = '';
+            choiceContainer.innerHTML = ''; // Clear previous choices
+            currentQuestionData.options.forEach((option, index) => {
+                const li = document.createElement('li');
+                li.classList.add('choice-item'); // For styling
+
+                const input = document.createElement('input');
+                input.type = 'radio';
+                input.name = 'jeopardy_choice';
+                input.value = index;
+                input.id = `choice-${index}`;
+
+                const label = document.createElement('label');
+                label.htmlFor = `choice-${index}`;
+                label.textContent = option;
+
+                li.appendChild(input);
+                li.appendChild(label);
+                choiceContainer.appendChild(li);
+            });
+
             feedbackDisplay.textContent = '';
             feedbackDisplay.className = '';
             correctAnswerDisplay.style.display = 'none';
-            answerInput.disabled = false;
             submitAnswerButton.disabled = false;
 
             questionModal.style.display = 'block';
-            answerInput.focus();
+        } else {
+            // Optionally handle questions not in the new format (e.g., mark as unplayable)
+            console.warn("Selected question is not in multiple-choice format or is missing options/answer index.", currentQuestionData);
+            targetCell.textContent = 'N/A'; // Mark cell as not applicable
+            targetCell.classList.add('answered'); // Treat as answered to prevent re-selection
+            targetCell.removeEventListener('click', handleQuestionClick);
+            return; // Do not open modal for non-compatible questions
         }
     }
 
     function submitAnswer() {
         if (!currentQuestionData) return;
 
-        const userAnswer = answerInput.value.trim();
-        const correctAnswer = currentQuestionData.answer;
+        const selectedOption = choiceContainer.querySelector('input[name="jeopardy_choice"]:checked');
 
-        if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+        if (!selectedOption) {
+            feedbackDisplay.textContent = "Please select an answer.";
+            feedbackDisplay.className = 'incorrect'; // Or a neutral warning class
+            return;
+        }
+
+        const userAnswerIndex = parseInt(selectedOption.value);
+        const correctAnswerIndex = currentQuestionData.answer;
+
+        if (userAnswerIndex === correctAnswerIndex) {
             feedbackDisplay.textContent = 'Correct!';
             feedbackDisplay.className = 'correct';
             updateScore(currentQuestionData.points);
@@ -124,13 +158,17 @@ document.addEventListener('DOMContentLoaded', () => {
             feedbackDisplay.textContent = 'Incorrect!';
             feedbackDisplay.className = 'incorrect';
             updateScore(-currentQuestionData.points);
-            correctAnswerText.textContent = correctAnswer;
+            // Display the text of the correct option
+            correctAnswerText.textContent = currentQuestionData.options[correctAnswerIndex];
             correctAnswerDisplay.style.display = 'block';
             playSound('incorrect');
         }
 
         currentQuestionData.answered = true;
-        answerInput.disabled = true;
+        // Disable all radio buttons
+        choiceContainer.querySelectorAll('input[name="jeopardy_choice"]').forEach(input => {
+            input.disabled = true;
+        });
         submitAnswerButton.disabled = true;
 
         const allCells = gameBoard.querySelectorAll('.question-cell');
@@ -163,6 +201,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function closeModal() {
         questionModal.style.display = 'none';
+        if (choiceContainer) { // Clear choices when modal is closed
+            choiceContainer.innerHTML = '';
+        }
         currentQuestionData = null;
     }
 

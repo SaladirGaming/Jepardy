@@ -4,32 +4,35 @@
       "name": "WORLD CAPITALS",
       "questions": [
         {
-          "question": "The capital of France.",
-          "answer": "Paris",
+          "question": "What is the capital of France?",
+          "options": ["London", "Berlin", "Paris", "Madrid"],
+          "answer": 2,
           "points": 200,
           "answered": false
         },
         {
-          "question": "The capital of Japan.",
-          "answer": "Tokyo",
+          "question": "What is the capital of Japan?",
+          "options": ["Beijing", "Seoul", "Tokyo", "Bangkok"],
+          "answer": 2,
           "points": 400,
           "answered": false
         },
         {
-          "question": "The capital of Australia.",
-          "answer": "Canberra",
+          "question": "What is the capital of Australia?",
+          "options": ["Sydney", "Melbourne", "Canberra", "Auckland"],
+          "answer": 2,
           "points": 600,
           "answered": false
         },
         {
           "question": "The capital of Egypt.",
-          "answer": "Cairo",
+          "answer_text": "Cairo",
           "points": 800,
           "answered": false
         },
         {
           "question": "The capital of Brazil.",
-          "answer": "Brasilia",
+          "answer_text": "Brasilia",
           "points": 1000,
           "answered": false
         }
@@ -39,32 +42,34 @@
       "name": "FAMOUS SCIENTISTS",
       "questions": [
         {
-          "question": "Developed the theory of relativity.",
-          "answer": "Albert Einstein",
+          "question": "Who developed the theory of relativity?",
+          "options": ["Isaac Newton", "Galileo Galilei", "Albert Einstein", "Nikola Tesla"],
+          "answer": 2,
           "points": 200,
           "answered": false
         },
         {
-          "question": "Known for her work on radioactivity.",
-          "answer": "Marie Curie",
+          "question": "Who is known for her work on radioactivity?",
+          "options": ["Rosalind Franklin", "Marie Curie", "Lise Meitner", "Ada Lovelace"],
+          "answer": 1,
           "points": 400,
           "answered": false
         },
         {
           "question": "Formulated the laws of motion and universal gravitation.",
-          "answer": "Isaac Newton",
+          "answer_text": "Isaac Newton",
           "points": 600,
           "answered": false
         },
         {
           "question": "Proposed the theory of evolution by natural selection.",
-          "answer": "Charles Darwin",
+          "answer_text": "Charles Darwin",
           "points": 800,
           "answered": false
         },
         {
           "question": "Made significant discoveries in electromagnetism and electrochemistry.",
-          "answer": "Michael Faraday",
+          "answer_text": "Michael Faraday",
           "points": 1000,
           "answered": false
         }

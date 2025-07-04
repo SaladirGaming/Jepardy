@@ -214,6 +214,38 @@ main {
     color: #333;
 }
 
+/* Styles for Multiple Choice Options */
+#choice-container {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    text-align: left; /* Align choices to the left */
+}
+
+.choice-item {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.choice-item:hover {
+    background-color: #f0f0f0;
+}
+
+.choice-item input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.choice-item label {
+    vertical-align: middle;
+    cursor: pointer;
+}
+/* End of Styles for Multiple Choice Options */
+
 footer {
     text-align: center;
     padding: 15px 0;
