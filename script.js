@@ -231,12 +231,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     submitAnswerButton.addEventListener('click', submitAnswer);
-    answerInput.addEventListener('keypress', function(event) {
-        if (event.key === 'Enter') {
-            event.preventDefault();
-            submitAnswer();
-        }
-    });
+    // answerInput is removed, so this event listener is no longer needed.
+    // answerInput.addEventListener('keypress', function(event) {
+    //     if (event.key === 'Enter') {
+    //         event.preventDefault();
+    //         submitAnswer();
+    //     }
+    // });
     closeModalButton.addEventListener('click', closeModal);
     resetGameButton.addEventListener('click', resetGame);
 
