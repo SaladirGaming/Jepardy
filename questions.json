@@ -25,14 +25,16 @@
           "answered": false
         },
         {
-          "question": "The capital of Egypt.",
-          "answer_text": "Cairo",
+          "question": "What is the capital of Egypt?",
+          "options": ["Tripoli", "Cairo", "Algiers", "Khartoum"],
+          "answer": 1,
           "points": 800,
           "answered": false
         },
         {
-          "question": "The capital of Brazil.",
-          "answer_text": "Brasilia",
+          "question": "What is the capital of Brazil?",
+          "options": ["Rio de Janeiro", "São Paulo", "Buenos Aires", "Brasilia"],
+          "answer": 3,
           "points": 1000,
           "answered": false
         }
@@ -56,20 +58,23 @@
           "answered": false
         },
         {
-          "question": "Formulated the laws of motion and universal gravitation.",
-          "answer_text": "Isaac Newton",
+          "question": "Who formulated the laws of motion and universal gravitation?",
+          "options": ["Albert Einstein", "Galileo Galilei", "Isaac Newton", "Johannes Kepler"],
+          "answer": 2,
           "points": 600,
           "answered": false
         },
         {
-          "question": "Proposed the theory of evolution by natural selection.",
-          "answer_text": "Charles Darwin",
+          "question": "Who proposed the theory of evolution by natural selection?",
+          "options": ["Gregor Mendel", "Charles Darwin", "Alfred Russel Wallace", "Jean-Baptiste Lamarck"],
+          "answer": 1,
           "points": 800,
           "answered": false
         },
         {
-          "question": "Made significant discoveries in electromagnetism and electrochemistry.",
-          "answer_text": "Michael Faraday",
+          "question": "Who made significant discoveries in electromagnetism and electrochemistry?",
+          "options": ["James Clerk Maxwell", "Michael Faraday", "André-Marie Ampère", "Alessandro Volta"],
+          "answer": 1,
           "points": 1000,
           "answered": false
         }
@@ -79,32 +84,37 @@
       "name": "LITERATURE",
       "questions": [
         {
-          "question": "Author of 'Pride and Prejudice'.",
-          "answer": "Jane Austen",
+          "question": "Who is the author of 'Pride and Prejudice'?",
+          "options": ["Charlotte Brontë", "Jane Austen", "Mary Shelley", "Emily Dickinson"],
+          "answer": 1,
           "points": 200,
           "answered": false
         },
         {
-          "question": "Wrote '1984' and 'Animal Farm'.",
-          "answer": "George Orwell",
+          "question": "Who wrote '1984' and 'Animal Farm'?",
+          "options": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "J.R.R. Tolkien"],
+          "answer": 1,
           "points": 400,
           "answered": false
         },
         {
-          "question": "The author of 'To Kill a Mockingbird'.",
-          "answer": "Harper Lee",
+          "question": "Who is the author of 'To Kill a Mockingbird'?",
+          "options": ["Harper Lee", "Truman Capote", "Flannery O'Connor", "John Steinbeck"],
+          "answer": 0,
           "points": 600,
           "answered": false
         },
         {
-          "question": "Created the character Sherlock Holmes.",
-          "answer": "Arthur Conan Doyle",
+          "question": "Who created the character Sherlock Holmes?",
+          "options": ["Agatha Christie", "Edgar Allan Poe", "Arthur Conan Doyle", "G.K. Chesterton"],
+          "answer": 2,
           "points": 800,
           "answered": false
         },
         {
-          "question": "Author of 'The Great Gatsby'.",
-          "answer": "F. Scott Fitzgerald",
+          "question": "Who is the author of 'The Great Gatsby'?",
+          "options": ["Ernest Hemingway", "William Faulkner", "John Steinbeck", "F. Scott Fitzgerald"],
+          "answer": 3,
           "points": 1000,
           "answered": false
         }
@@ -114,32 +124,37 @@
       "name": "US PRESIDENTS",
       "questions": [
         {
-          "question": "The first President of the United States.",
-          "answer": "George Washington",
+          "question": "Who was the first President of the United States?",
+          "options": ["Thomas Jefferson", "John Adams", "George Washington", "Benjamin Franklin"],
+          "answer": 2,
           "points": 200,
           "answered": false
         },
         {
-          "question": "President during the Civil War.",
-          "answer": "Abraham Lincoln",
+          "question": "Which President served during the Civil War?",
+          "options": ["Andrew Jackson", "Abraham Lincoln", "Ulysses S. Grant", "James Buchanan"],
+          "answer": 1,
           "points": 400,
           "answered": false
         },
         {
-          "question": "Known for the New Deal programs.",
-          "answer": "Franklin D. Roosevelt",
+          "question": "Which President is known for the New Deal programs?",
+          "options": ["Herbert Hoover", "Theodore Roosevelt", "Franklin D. Roosevelt", "Harry S. Truman"],
+          "answer": 2,
           "points": 600,
           "answered": false
         },
         {
-          "question": "The youngest person to assume the presidency.",
-          "answer": "Theodore Roosevelt",
+          "question": "Who was the youngest person to assume the presidency?",
+          "options": ["John F. Kennedy", "Theodore Roosevelt", "Ulysses S. Grant", "Grover Cleveland"],
+          "answer": 1,
           "points": 800,
           "answered": false
         },
         {
-          "question": "The only president to serve non-consecutive terms.",
-          "answer": "Grover Cleveland",
+          "question": "Who is the only president to serve non-consecutive terms?",
+          "options": ["Grover Cleveland", "Woodrow Wilson", "Richard Nixon", "Benjamin Harrison"],
+          "answer": 0,
           "points": 1000,
           "answered": false
         }
@@ -149,32 +164,37 @@
       "name": "TECHNOLOGY",
       "questions": [
         {
-          "question": "Co-founder of Apple Inc.",
-          "answer": "Steve Jobs",
+          "question": "Who was a co-founder of Apple Inc. along with Steve Wozniak?",
+          "options": ["Bill Gates", "Steve Jobs", "Larry Ellison", "Michael Dell"],
+          "answer": 1,
           "points": 200,
           "answered": false
         },
         {
-          "question": "The most popular search engine in the world.",
-          "answer": "Google",
+          "question": "What is the most popular search engine in the world?",
+          "options": ["Bing", "Yahoo", "DuckDuckGo", "Google"],
+          "answer": 3,
           "points": 400,
           "answered": false
         },
         {
-          "question": "A popular social media platform with a blue bird logo.",
-          "answer": "Twitter",
+          "question": "Which popular social media platform is known for its blue bird logo and character limits?",
+          "options": ["Facebook", "Instagram", "Twitter", "LinkedIn"],
+          "answer": 2,
           "points": 600,
           "answered": false
         },
         {
-          "question": "The world's largest online retailer.",
-          "answer": "Amazon",
+          "question": "What company is the world's largest online retailer?",
+          "options": ["Alibaba", "eBay", "Amazon", "Walmart"],
+          "answer": 2,
           "points": 800,
           "answered": false
         },
         {
-          "question": "The creator of the World Wide Web.",
-          "answer": "Tim Berners-Lee",
+          "question": "Who is credited with creating the World Wide Web?",
+          "options": ["Vint Cerf", "Tim Berners-Lee", "Marc Andreessen", "Robert Cailliau"],
+          "answer": 1,
           "points": 1000,
           "answered": false
         }
@@ -184,32 +204,37 @@
       "name": "SPORTS TRIVIA",
       "questions": [
         {
-          "question": "This sport is played at Wimbledon.",
-          "answer": "Tennis",
+          "question": "Which major tennis tournament is played on grass courts at Wimbledon?",
+          "options": ["US Open", "French Open", "Australian Open", "The Championships, Wimbledon"],
+          "answer": 3,
           "points": 200,
           "answered": false
         },
         {
-          "question": "The number of players on a standard soccer team.",
-          "answer": "11",
+          "question": "How many players are on a standard soccer team on the field at one time?",
+          "options": ["9", "10", "11", "12"],
+          "answer": 2,
           "points": 400,
           "answered": false
         },
         {
-          "question": "The country that won the first FIFA World Cup in 1930.",
-          "answer": "Uruguay",
+          "question": "Which country won the first FIFA World Cup in 1930?",
+          "options": ["Brazil", "Argentina", "Uruguay", "Italy"],
+          "answer": 2,
           "points": 600,
           "answered": false
         },
         {
-          "question": "The sport known as America's pastime.",
-          "answer": "Baseball",
+          "question": "Which sport is often referred to as America's pastime?",
+          "options": ["American Football", "Basketball", "Baseball", "Ice Hockey"],
+          "answer": 2,
           "points": 800,
           "answered": false
         },
         {
-          "question": "The city that hosted the 2016 Summer Olympics.",
-          "answer": "Rio de Janeiro",
+          "question": "Which city hosted the 2016 Summer Olympics?",
+          "options": ["Tokyo", "London", "Rio de Janeiro", "Beijing"],
+          "answer": 2,
           "points": 1000,
           "answered": false
         }
